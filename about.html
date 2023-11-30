@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+  <head>
+    <title>About</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="stylesheet" href="/about-section.css" />
+    <link rel="stylesheet" href="/catalog-section.css" />
+    <link rel="stylesheet" href="/contact.css" />
+    <link rel="stylesheet" href="/slider2.css"/>
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="container">
+        <a href="/index.html">
+          <img class="logo-image-nav" src="images/logo.png" alt="logo"
+        /></a>
+        <div
+          class="burger"
+          id="burgerMenu"
+          onclick="openBurgerMenu()"
+          onmouseover="hideAndShow(elementW, elementY)"
+          onmouseleave="hideAndShow(elementY, elementW)"
+        >
+          <img
+            style="display: flex"
+            class="burgerIcon"
+            id="burgerIconY"
+            src="images/burgerMenuY.svg"
+          />
+
+          <img
+            style="display: none"
+            class="burgerIcon"
+            id="burgerIconW"
+            src="images/burgerMenuW.svg"
+          />
+        </div>
+
+        <div class="burgerMenu column-container" id="burgerMenuBody">
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/index.html">Главная</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/catalog.html">Каталог</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/about.html">О нас</a>
+          </div>
+          <div class="nav-link-transform">
+            <a
+              class="nav-link contact"
+              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+              >Контакты</a
+            >
+          </div>
+        </div>
+        <div class="nav-links-wrapper" id="menu">
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/index.html">Главная</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/catalog.html">Каталог</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/about.html">О нас</a>
+          </div>
+          <div class="nav-link-transform">
+            <a
+              class="nav-link contact"
+              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+              >Контакты</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="about-section" id="about">
+      <div class="container column-container about">
+        <h2 class="heading-fixed-image catalog">о нас</h2>
+        <p class="about-paragraph">
+          <span class="about-span">Дерево</span> – это материал, который отличается прочностью, лёгкостью в
+          обработке, экологичностью, обладает высокими декоративными качествами
+          и отменными эксплуатационными характеристиками. <span class="about-span">Древесина</span> -
+          необходимый материал для производства мебели и предметов интерьера,
+          разных этапов отделки, строительства временных конструкций и прочих
+          сооружений. Благодаря уникальным свойствам натурального дерева, по
+          всему миру ежедневно осуществляются инженерные и дизайнерские проекты
+          любой сложности. Одним из самых надежных и бюджетных материалов из
+          древесины является ламель (пилёный шпон). 
+        </p>
+        <p class="about-paragraph">
+          <span class="about-span">Ламель</span> — это срез древесины
+          (массив дерева), толщиной 3-11 мм. В отличие от строганного и лущеного
+          шпона ламель гораздо более прочное покрытие. Применяется для отделки
+          дверей, паркета, ступеней, придает завершенный вид.
+        </p>
+        <p class="about-paragraph">
+          Распил материала мы производим на рамном многопильном станке
+        </p>
+        <p class="ws about-span">DSG-Eco Plus Winterschteiger</p>
+        <div class="about-images-wrapper">
+          <img
+            src="stanok/6511876b1c6bd5a30957f447_DSC_0316.jpg"
+            class="about-image"
+          />
+          <img
+            src="stanok/65119afc6e59fb3d3eaa3c1b_DSC_0315.jpg"
+            class="about-image"
+          />
+          <img
+            src="stanok/65119afca903ad129edb1229_DSC_0323.jpg"
+            class="about-image"
+          />
+        </div>
+        <p class="about-paragraph">
+          <span class="about-span">Мы производим и реализуем</span> пиломатериалы оптом и в розницу. При
+          изготовлении продукции используется экологически чистое
+          высококачественное сырье. Обработка материала выполняется с полным
+          соблюдением всех действующих норм и стандартов. Контроль производства
+          осуществляется на каждом этапе, поэтому продукцию отличает точная
+          геометрия. Поверхности пиломатериалов соответствуют указанному сорту.
+          Свою деятельность мы начали в 2007 году и с тех пор смогли заслужить
+          доверие многих заказчиков.
+        </p>
+        <p class="about-paragraph"> ‍Вы можете заказать распил <span class="about-span">давальческого
+          сырья</span>, также в ассортименте представлен пиленый шпон из различных
+          пород дерева - дуба, клёна, ясеня, ели. Оформляйте заявку и получайте
+          пиломатериал достойного качества!Планируя ремонт многие мечтают об
+          отделке из натуральной древесины. Эта мечта исполнится быстрее, чем вы
+          себе это представляете. Ведь главное – найти хорошего производителя и
+          приобрести качественную ламель. Современные новинки не смогли
+          вытеснить с рынка древесину. Cколько бы не развивались современные
+          технологии, дерево навсегда останется лучшим материаломдля отделки
+          вашего жилья, офиса, мебели и других изделий. Людей, собирающихся
+          купить пиломатериалы, становится не меньше, а, наоборот, больше с
+          каждым годом. Такая тенденция объясняется разными причинами:</p>
+        <p class="about-paragraph">
+          <span class="about-span">универсальность</span> – автоматизация и совершенствование технологий не
+          только повысили качество древесной продукции, они еще сделали их
+          применение повсеместным.
+        </p>
+        <p class="about-paragraph">
+          <span class="about-span">экологичность</span> – отсутствие вредных веществ в
+          составе древесины делает такие её безопасным для здоровья материалом.
+          Этим не могут похвалиться современные синтетические материалы, при
+          изготовлении которых используется химическая обработка;
+        </p>
+        <p class="about-paragraph">
+          <span class="about-span">эстетичность</span> – природный узор дерева невозможно повторить даже вручную. Древесная
+          текстура органично смотрится в любом окружении. Она сочетается с
+          пластиком, металлом, камнем, уместна в разных стилях; ‍
+        </p>
+        <p class="about-paragraph">
+          <span class="about-span">долговечность</span> – древесина твёрдых пород служит десятилетиями. Для этого нужен только
+          своевременный уход. Многие породы устойчивы к атмосферным осадкам,
+          поражению патогенной микрофлорой. Но даже если эти свойства
+          отсутствуют изначально, они обязательно появятся после дополнительной
+          обработки антисептическими составами.
+        </p>
+        <div class="about-images-wrapper">
+          <img
+            src="klen/DSC_0011.JPG"
+            class="about-image"
+          />
+          <img
+            src="klen/DSC_0336.JPG"
+            class="about-image"
+          />
+          <img
+            src="yasen/DSC_0034.JPG"
+            class="about-image"
+          />
+        </div>
+        
+        <p class="about-paragraph">
+          Мы работаем с 2007 года. За это время у нас появились надежные партнеры, налаженные логистические
+          цепочки. Среди достоинств компании называют:‍тщательный выбор дерева –
+          мы используем лиственные и хвойные породы, но все они проходят ручной
+          отбор; высокоточное оборудование гарантирует четкую геометрию по всей
+          плоскости, точное соответствие размерам; соблюдение действующих
+          международных стандартов – выбирайте надежную, долговечную продукции
+          согласно установленной сортности; Мы знаем о красоте, экологичности,
+          древесины и ее востребованности. Поэтому предлагаем долговечность и
+          качество. С нашими пиломатериалами любой дом будет теплым, уютным, а
+          отделка – эстетичной.
+        </p>
+      </div>
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="container column-container">
+        <h2 class="heading-fixed-image make-order">оформить заказ</h2>
+        <div class="arrows-wrapper-contact">
+          <img class="arrow-contact left-arrow" src="images/arrow2.png" />
+          <img class="arrow-contact right-arrow" src="images/arrow2.png" />
+        </div>
+        <div class="contacts">
+          <div class="contact-wrapper">
+            <img class="contact-icon" src="images/whatsappIcon.svg" />
+            <a class="contact-item" href="tel:89017977306">8-901-749-57-54</a>
+          </div>
+          <div class="contact-wrapper">
+            <img class="contact-icon" src="images/mailIcon.svg" />
+            <a class="contact-item mail" href="mailto: abc@example.com"
+              >a.w.demtirov@yandex.ru</a
+            >
+          </div>
+        </div>
+        <div class="form-wrapper" id="contactForm">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSflwwQJwwad-yN-rNgkPtWn13C77lKVYTCfOZugsfUAo71WAw/viewform?embedded=true"
+            height="800"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
+        </div>
+        
+
+        <div></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container column-container">
+        <div class="footer-wrapper">
+          <a href="/index.html"
+            ><img
+              class="logo-footer"
+              src="images/logo.png"
+          /></a>
+          <div class="footer-items">
+            <div class="footer-item">
+              <a class="footer-item-link" href="/index.html">Главная</a>
+            </div>
+            <div class="footer-item">
+              <a class="footer-item-link" href="/catalog.html">Каталог</a>
+            </div>
+            <div class="footer-item">
+              <a class="footer-item-link" href="/about.html">О нас</a>
+            </div>
+          </div>
+          <div class="footer-contacts">
+            <div class="contact-item-footer">
+              <a class="footer-item-link contact-footer" href="tel:89017977306"
+                >89017373822</a
+              >
+            </div>
+            <div class="contact-item-footer">
+              <a
+                class="footer-item-link contact-footer"
+                href="mailto: abc@example.com"
+                >cnuieuiue@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="all-rights">
+          © 2023. OOO «Acousticwood». Все права защищены.
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const windowWidth = window.innerWidth;
+    const menu = document.getElementById("menu");
+    const burgerMenu = document.getElementById("burgerMenu");
+
+    function changeMenu(menu, burgerMenu, breakPoint) {
+      function setWideMenu() {
+        menu.style.display = "flex";
+        burgerMenu.style.display = "none";
+      }
+      function setBurgerMenu() {
+        menu.style.display = "none";
+        burgerMenu.style.display = "flex";
+      }
+      windowWidth > breakPoint ? setWideMenu() : setBurgerMenu();
+      
+    }
+
+    window.onresize = () => changeMenu(menu, burgerMenu, 700);
+
+    changeMenu(menu, burgerMenu, 700);
+    
+    
+
+    function switchBurgerMenu() {
+      let element = document.getElementById("burgerMenuBody");
+      let state = getComputedStyle(element).display == "flex";
+
+      state
+        ? (element.style.display = "none")
+        : (element.style.display = "flex");
+    }
+  </script>
+  <script src="main.js"></script>
+  <script src="openBurgerMenu.js"></script>
+  <script src="changeColorOnHover.js"></script>
+</html>

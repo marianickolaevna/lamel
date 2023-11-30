@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+html, body {
+  text-align: center;
+}
+
+.line4, .carousel4 li img, .carousel4 li, .carousel4 {
+  width: 100%;
+}
+
+.flex, .carousel-wrapper4, .center4, .carousel4 ul {
+  display: flex;
+}
+
+.center4, .carousel4 ul {
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+.carousel-wrapper4 {
+  position: relative;
+}
+.carousel-wrapper4 input {
+  display: none;
+}
+
+.carousel4 {
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+}
+.carousel4 ul {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 200%;
+  transition: left 1s;
+}
+.carousel4 li img {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.nav-dot4 {
+  position: absolute;
+  cursor: pointer;
+  padding: 0px;
+  bottom: 20px;
+  width: 2vw;
+  height: 2vw;
+  z-index: 1;
+  opacity: 0.5;
+  background-color: rgb(250, 218, 164);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.nav-dot4:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+.nav-dot4:active {
+  transform: scale(0.9);
+}
+
+.nav-dot4[for=slide41] {
+  left: 47.5%;
+}
+
+#slide41:checked ~ .carousel4 ul {
+  left: 0%;
+}
+#slide41:checked ~ .nav-dot4[for=slide41] {
+  opacity: 1;
+}
+
+.nav-dot4[for=slide42] {
+  left: 52.5%;
+}
+
+#slide42:checked ~ .carousel4 ul {
+  left: -100%;
+}
+#slide42:checked ~ .nav-dot4[for=slide42] {
+  opacity: 1;
+}
+
+.r-arrow4, .l-arrow4 {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  color: rgb(250, 218, 164);
+  top: 40%;
+  z-index: 1;
+  opacity: 1;
+  height: 5vw;
+  font-size: 5vw;
+  transition: 0.5s;
+}
+.r-arrow4:hover, .l-arrow4:hover {
+  opacity: 0.5;
+}
+.r-arrow4:active, .l-arrow4:active {
+  opacity: 0.5;
+}
+
+.l-arrow4 {
+  left: 20px;
+}
+
+.r-arrow4 {
+  right: 20px;
+}
+
+#slide41:checked ~ .l-arrow4[for=slide42][for=slide42], #slide41:checked ~ .r-arrow4[for=slide42] {
+  display: block;
+}
+
+#slide42:checked ~ .l-arrow4[for=slide41][for=slide41], #slide42:checked ~ .r-arrow4[for=slide41] {
+  display: block;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-dot4 {
+    width: 4vw;
+    height: 4vw;
+  }
+}/*# sourceMappingURL=slider4.css.map */

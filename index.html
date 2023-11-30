@@ -1,0 +1,199 @@
+<html>
+  <head>
+    <title>My Website</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="stylesheet" href="/hero.css" />
+    <link rel="stylesheet" href="/your.css" />
+    <link rel="stylesheet" href="/contact.css" />
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="container">
+        <a href="/index.html">
+          <img class="logo-image-nav" src="images/logo.png" alt="logo"
+        /></a>
+        <div
+          class="burger"
+          id="burgerMenu"
+          onclick="openBurgerMenu()"
+          onmouseover="hideAndShow(elementW, elementY)"
+          onmouseleave="hideAndShow(elementY, elementW)"
+        >
+          <img
+            style="display: flex"
+            class="burgerIcon"
+            id="burgerIconY"
+            src="images/burgerMenuY.svg"
+          />
+
+          <img
+            style="display: none"
+            class="burgerIcon"
+            id="burgerIconW"
+            src="images/burgerMenuW.svg"
+          />
+        </div>
+
+        <div class="burgerMenu column-container" id="burgerMenuBody">
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/index.html">Главная</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/catalog.html">Каталог</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/about.html">О нас</a>
+          </div>
+          <div class="nav-link-transform">
+            <a
+              class="nav-link contact"
+              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+              >Контакты</a
+            >
+          </div>
+        </div>
+        <div class="nav-links-wrapper" id="menu">
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/index.html">Главная</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/catalog.html">Каталог</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/about.html">О нас</a>
+          </div>
+          <div class="nav-link-transform">
+            <a
+              class="nav-link contact"
+              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+              >Контакты</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="hero-section" id="hero">
+      <h2 class="hero-h2">Распил досок на</h2>
+      <h1 class="hero-h1">Ламель</h1>
+      <h2 class="hero-h2">В краснодарском крае</h2>
+      <button
+        class="hero-button"
+        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+      >
+        Распилить
+      </button>
+      <h3 class="hero-h3">Ширина пиления 50 - 300 mm</h3>
+      <img class="hero-image image-right" src="images/opilki.png" />
+      <img class="hero-image image-left" src="images/opilki.png" />
+    </section>
+    <section class="your-section">
+      <h3 class="heading-fixed-image">
+        Распил давальческого сырья по цене 40 000 ₽ за 1 м³ по входу
+      </h3>
+      <div class="your-text your-text-1">
+        Вы привозите нам свой материал
+      </div>
+      <div class="your-text your-text-2">
+        Мы пилим его на станке DSG-Eco Plus Winterschteiger
+      </div>
+      <div class="your-text your-text-3">
+        Вы получаете пилёный шпон нужных размеров в обговоренное время
+      </div>
+      <div class="your-text your-text-4">
+        Для уточнения деталей и оформления заказа
+      </div>
+      <img class="your-object your-arrow-1" src="images/arrow1.png" />
+      <img class="your-object your-arrow-2" src="images/arrow1.png" />
+      <img class="your-object your-arrow-3" src="images/arrow1.png" />
+      <img class="your-object your-arrow-4" src="images/arrow2.png" />
+      <img class="your-object your-image-1" src="images/object1.png" />
+      <img class="your-object your-image-2" src="images/object2.png" />
+      <img class="your-object your-image-3" src="images/object4.png" />
+      <button
+        class="hero-button your-button"
+        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+      >
+        Свяжитесь с нами
+      </button>
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="container column-container">
+        <h2 class="heading-fixed-image make-order">свяжитесь с нами</h2>
+        <div class="arrows-wrapper-contact">
+          <img class="arrow-contact left-arrow" src="images/arrow2.png" />
+          <img class="arrow-contact right-arrow" src="images/arrow2.png" />
+        </div>
+        <div class="contacts">
+          <div class="contact-wrapper">
+            <img class="contact-icon" src="images/whatsappIcon.svg" />
+            <a class="contact-item" href="tel:89017977306">8-901-749-57-54</a>
+          </div>
+          <div class="contact-wrapper">
+            <img class="contact-icon" src="images/mailIcon.svg" />
+            <a class="contact-item mail" href="mailto: abc@example.com"
+              >a.w.demtirov@yandex.ru</a
+            >
+          </div>
+        </div>
+        <div class="form-wrapper" id="contactForm">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSflwwQJwwad-yN-rNgkPtWn13C77lKVYTCfOZugsfUAo71WAw/viewform?embedded=true"
+            height="800"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
+        </div>
+        
+
+        <div></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container column-container">
+        <div class="footer-wrapper">
+          <a href="/index.html"
+            ><img class="logo-footer" src="images/logo.png"
+          /></a>
+          <div class="footer-items">
+            <div class="footer-item">
+              <a class="footer-item-link" href="/index.html">Главная</a>
+            </div>
+            <div class="footer-item">
+              <a class="footer-item-link" href="/catalog.html">Каталог</a>
+            </div>
+            <div class="footer-item">
+              <a class="footer-item-link" href="/about.html">О нас</a>
+            </div>
+          </div>
+          <div class="footer-contacts">
+            <div class="contact-item-footer">
+              <a class="footer-item-link contact-footer" href="tel:89017977306"
+                >89017373822</a
+              >
+            </div>
+            <div class="contact-item-footer">
+              <a
+                class="footer-item-link contact-footer"
+                href="mailto: abc@example.com"
+                >cnuieuiue@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="all-rights">
+          © 2023. OOO «Acousticwood». Все права защищены.
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="main.js"></script>
+  <script src="openBurgerMenu.js"></script>
+  <script src="changeColorOnHover.js"></script>
+</html>

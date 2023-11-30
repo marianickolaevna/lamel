@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+
+$nb4-slides: 2;
+
+
+// THE BASICS
+html, body {
+  text-align: center;
+}
+
+.line4 {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.center4 {
+  @extend .flex;
+  align-items: center; // horizontal
+  justify-content: center; // vertical
+  flex-grow: 2;
+}
+
+
+.carousel-wrapper4 {
+  @extend .flex;
+  position: relative;
+  
+
+  input {
+    display: none;
+  }
+}
+
+
+// CAROUSEL / SLIDER
+.carousel4 {
+  @extend .line4;
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+
+  ul {
+    @extend .center4;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    width: 100% * $nb4-slides;
+
+    transition: left 1s;
+  }
+
+  li {
+    @extend .line4;
+
+    img {
+      @extend .line4;
+      border-radius: 0px 0px 20px 20px;
+    }
+  }
+}
+
+
+// NAVIGATION DOTS
+.nav-dot4 {
+  $dot-size: 2vw;
+  position: absolute;
+  cursor: pointer;
+  padding: 0px;
+  bottom: 20px;
+  width: $dot-size;
+  height: $dot-size;
+z-index: 1;
+  opacity: .5;
+  background-color: rgba(250, 218, 164);
+  border-radius: 50%;
+  transition: .4s;
+
+  &:hover {
+    opacity: .8;
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+// goes from 1 to 5.
+@for $n4 from 1 through $nb4-slides {
+  // arranges the navigation dots horizontally
+  .nav-dot4[for=slide4#{$n4}] {
+    left: 50% + ((($n4 - 1) - (($nb4-slides - 1)/ 2)) * 5%);
+  }
+
+  #slide4#{$n4}:checked {
+    // moves the carousel to the right slide
+    & ~ .carousel4 ul { left: -100% * ($n4 - 1) }
+
+    // highlights the selected navigation dot
+    & ~ .nav-dot4[for=slide4#{$n4}] {
+      opacity: 1;
+    }
+  }
+}
+
+
+// ARROWS
+%arrow4 {
+  $arrow-size: 5vw;
+  display: none;  // hidden by default
+  position: absolute;
+
+  cursor: pointer;
+  color: rgba(250, 218, 164);
+  //text-shadow: 0 0 7.5px rgba($color: rgba(250, 218, 164, 0.5), $alpha: .7);
+
+  top: 40%;
+  z-index: 1;
+  opacity: 1;
+  //margin-top: -$arrow-size / 2;
+  height: $arrow-size;
+  font-size: $arrow-size;
+  transition: .5s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.l-arrow4 {
+  @extend %arrow4;
+  left: 20px;
+}
+
+.r-arrow4 {
+  @extend %arrow4;
+  right: 20px;
+}
+
+@function custom-modulo4($n4) {
+  // this function returns '$n % $nb-slides', except that if the result is 0,
+  // '$nb-slides' is returned.
+  // for exemple, for $nb-slides = 4, possible values are {1, 2, 3, 4}
+  // (and not {0, 1, 2, 3}).
+  @return 1 + ($nb4-slides + (($n4 - 1) % $nb4-slides)) % $nb4-slides;
+}
+
+@for $n4 from 1 through $nb4-slides {
+  // when the nth slide is selected,
+  // displays the left-arrow that goes to the (n-1)th slide
+  // and the right arrow that goes to the (n+1)th slide.
+  // don't worry, it loops thanks to the 'custom-modulo' function !
+
+  #slide4#{$n4}:checked {
+    & ~ .l-arrow4[for=slide4#{custom-modulo4($n4 - 1)}][for=slide4#{custom-modulo4($n4 - 1)}],
+    & ~ .r-arrow4[for=slide4#{custom-modulo4($n4 + 1)}] {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-dot4 {
+    
+    width: 4vw;
+    height: 4vw;
+  }
+}

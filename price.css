@@ -1,0 +1,153 @@
+.column-container {
+  flex-direction: column;
+}
+.price {
+  padding-bottom: 8vw;
+}
+.last {
+  padding-bottom: 4vw;
+}
+.column-container {
+  flex-direction: column;
+}
+
+.price-section {
+  margin-top: 8vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+.tabs-and-name-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wood-name {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Yanone kaffeesatz";
+  padding: 20px;
+  text-align: center;
+}
+
+.tabs-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tabs {
+  width: 100%;
+}
+
+.tab-button {
+  flex-grow: 1;
+  position: relative;
+  transition: background-color 0.5s;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+  padding: 9px 0px;
+  text-decoration: none;
+  font-size: 2.5vw;
+  font-weight: 400;
+  font-family: "Yanone kaffeesatz";
+}
+
+.tab-button:hover {
+  background-color: rgba(250, 218, 164, 0.2);;
+}
+
+.tabs .tab-button.active {
+  background-color:rgba(250, 218, 164, 0.5);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tabs .tab-content.active {
+  display: block;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  border-bottom: 1px solid gray;
+}
+.line.sizes {
+  background-color:rgba(250, 218, 164, 0.5);
+  border: 0px;
+}
+.size {
+  justify-content: center;
+  align-self: auto;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 25%;
+  font-size: 2vw;
+  line-height: 1;
+  font-weight: 400;
+}
+
+
+.contact-us-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.didnt-find {
+  font-size: 25px;
+  font-family: "Yanone kaffeesatz";
+  color: rgba(0, 0, 0, 0.75);
+  margin: 10px 0px;
+}
+
+.didnt-find-button {
+  background-color: rgba(250, 218, 164, 0.5);
+  border: 0px;
+  color: #5e4a4a;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 8px 24px;
+  border-radius: 10px;
+  transition: transform .6s;
+  font-family: "Yanone kaffeesatz";
+}
+
+.didnt-find-button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .tab-button {
+    font-size: 5vw;
+  }
+  .size {
+    font-size: 4vw;
+  }
+  .line {
+    height: 12vw;
+  }
+  .didnt-find-button {
+    font-size: 24px;
+  }
+  .heading-fixed-image.catalog {
+    font-size: 8vw;
+    margin-top: 6vw;
+    margin-bottom: 3vw;
+  }
+  .wood-name {
+font-size: 7vw;
+padding: 10px;
+  }
+}

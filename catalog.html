@@ -1,0 +1,1116 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Catalog</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="stylesheet" href="/catalog-section.css" />
+    <link rel="stylesheet" href="/slider.css" />
+    <link rel="stylesheet" href="/slider2.css" />
+    <link rel="stylesheet" href="/slider3.css" />
+    <link rel="stylesheet" href="/slider4.css" />
+    <link rel="stylesheet" href="/price.css" />
+    <link rel="stylesheet" href="/contact.css" />
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="container">
+        <a href="/index.html">
+          <img class="logo-image-nav" src="images/logo.png" alt="logo"
+        /></a>
+        <div
+          class="burger"
+          id="burgerMenu"
+          onclick="openBurgerMenu()"
+          onmouseover="hideAndShow(elementW, elementY)"
+          onmouseleave="hideAndShow(elementY, elementW)"
+        >
+          <img
+            style="display: flex"
+            class="burgerIcon"
+            id="burgerIconY"
+            src="images/burgerMenuY.svg"
+          />
+
+          <img
+            style="display: none"
+            class="burgerIcon"
+            id="burgerIconW"
+            src="images/burgerMenuW.svg"
+          />
+        </div>
+
+        <div class="burgerMenu column-container" id="burgerMenuBody">
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/index.html">Главная</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/catalog.html">Каталог</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/about.html">О нас</a>
+          </div>
+          <div class="nav-link-transform">
+            <a
+              class="nav-link contact"
+              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+              >Контакты</a
+            >
+          </div>
+        </div>
+        <div class="nav-links-wrapper" id="menu">
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/index.html">Главная</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/catalog.html">Каталог</a>
+          </div>
+          <div class="nav-link-transform">
+            <a class="nav-link" href="/about.html">О нас</a>
+          </div>
+          <div class="nav-link-transform">
+            <a
+              class="nav-link contact"
+              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+              >Контакты</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="catalog" class="catalog-section">
+      <h3 class="heading-fixed-image catalog">есть на складе</h3>
+      <div class="catalog-grid">
+        <div class="slider-block">
+          <div class="slider-top">
+            <div class="slider-heading">Ламель из клёна</div>
+            <div class="slider-info-wrapper">
+              <div class="available-wrapper">
+                <div class="slider-text isavailable available">В наличии</div>
+
+                <img
+                  class="slider-arrow-down round is"
+                  src="images/checkMark.svg"
+                />
+              </div>
+
+              <div class="down-wrapper">
+                <div
+                  class="slider-text down"
+                  onclick="document.getElementById('klen').scrollIntoView({ behavior: 'smooth' });"
+                >
+                  Размеры и цены
+                </div>
+                <img
+                  class="slider-arrow-down"
+                  src="images/arrowDown.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="center2">
+            <div class="carousel-wrapper2">
+              <!-- abstract radio buttons for slides -->
+              <input id="slide21" type="radio" name="controls" checked="checked" />
+              <input id="slide22" type="radio" name="controls" />
+              <input id="slide23" type="radio" name="controls" />
+              <input id="slide24" type="radio" name="controls" />
+              <input id="slide25" type="radio" name="controls" />
+    
+              <!-- navigation dots -->
+              <label for="slide21" class="nav-dot2"></label>
+              <label for="slide22" class="nav-dot2"></label>
+              <label for="slide23" class="nav-dot2"></label>
+              <label for="slide24" class="nav-dot2"></label>
+              <label for="slide25" class="nav-dot2"></label>
+    
+              <!-- arrows -->
+              <label for="slide21" class="l-arrow2"> < </label>
+              <label for="slide22" class="l-arrow2"> < </label>
+              <label for="slide23" class="l-arrow2"> < </label>
+              <label for="slide24" class="l-arrow2"> < </label>
+              <label for="slide25" class="l-arrow2"> < </label>
+    
+              <label for="slide21" class="r-arrow2"> > </label>
+              <label for="slide22" class="r-arrow2"> > </label>
+              <label for="slide23" class="r-arrow2"> > </label>
+              <label for="slide24" class="r-arrow2"> > </label>
+              <label for="slide25" class="r-arrow2"> > </label>
+    
+              <div class="carousel2">
+                <ul>
+                  <li>
+                    <img
+                      src="klen/DSC_0011.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="klen/DSC_0012.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="klen/DSC_0013.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="klen/DSC_0016.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="klen/DSC_0030.JPG"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="price-label"> от 900 p</div>
+        </div>
+        <div class="slider-block">
+          <div class="slider-top">
+            <div class="slider-heading">Ламель из дуба</div>
+            <div class="slider-info-wrapper">
+              <div class="available-wrapper">
+                <div class="slider-text isavailable available">В наличии</div>
+
+                <img
+                  class="slider-arrow-down round is"
+                  src="images/checkMark.svg"
+                />
+              </div>
+
+              <div class="down-wrapper">
+                <div
+                  class="slider-text down"
+                  onclick="document.getElementById('klen').scrollIntoView({ behavior: 'smooth' });"
+                >
+                  Размеры и цены
+                </div>
+                <img
+                  class="slider-arrow-down"
+                  src="images/arrowDown.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="center">
+            <div class="carousel-wrapper">
+              <!-- abstract radio buttons for slides -->
+              <input id="slide1" type="radio" name="controls" checked="checked" />
+              <input id="slide2" type="radio" name="controls" />
+              <input id="slide3" type="radio" name="controls" />
+              <input id="slide4" type="radio" name="controls" />
+              <input id="slide5" type="radio" name="controls" />
+    
+              <!-- navigation dots -->
+              <label for="slide1" class="nav-dot"></label>
+              <label for="slide2" class="nav-dot"></label>
+              <label for="slide3" class="nav-dot"></label>
+              <label for="slide4" class="nav-dot"></label>
+              <label for="slide5" class="nav-dot"></label>
+    
+              <!-- arrows -->
+              <label for="slide1" class="l-arrow"> < </label>
+              <label for="slide2" class="l-arrow"> < </label>
+              <label for="slide3" class="l-arrow"> < </label>
+              <label for="slide4" class="l-arrow"> < </label>
+              <label for="slide5" class="l-arrow"> < </label>
+    
+              <label for="slide1" class="r-arrow"> > </label>
+              <label for="slide2" class="r-arrow"> > </label>
+              <label for="slide3" class="r-arrow"> > </label>
+              <label for="slide4" class="r-arrow"> > </label>
+              <label for="slide5" class="r-arrow"> > </label>
+    
+              <div class="carousel">
+                <ul>
+                  <li>
+                    <img
+                      src="dub/DSC_0007.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="dub/DSC_0027.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="dub/DSC_0028.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="dub/DSC_0029.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="dub/DSC_0301.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="dub/DSC_0301.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="dub/DSC_0301.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="dub/DSC_0301.JPG"
+                    />
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="price-label"> от 1250 p</div>
+        </div>
+        <div class="slider-block">
+          <div class="slider-top">
+            <div class="slider-heading">Ламель из ясеня</div>
+            <div class="slider-info-wrapper">
+              <div class="available-wrapper">
+                <div class="slider-text isavailable available">В наличии</div>
+
+                <img
+                  class="slider-arrow-down round is"
+                  src="images/checkMark.svg"
+                />
+              </div>
+
+              <div class="down-wrapper">
+                <div
+                  class="slider-text down"
+                  onclick="document.getElementById('yasen').scrollIntoView({ behavior: 'smooth' });"
+                >
+                  Размеры и цены
+                </div>
+                <img
+                  class="slider-arrow-down"
+                  src="images/arrowDown.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="center3">
+            <div class="carousel-wrapper3">
+              <!-- abstract radio buttons for slides -->
+              <input id="slide31" type="radio" name="controls" checked="checked" />
+              <input id="slide32" type="radio" name="controls" />
+              <input id="slide33" type="radio" name="controls" />
+              <input id="slide34" type="radio" name="controls" />
+              <input id="slide35" type="radio" name="controls" />
+    
+              <!-- navigation dots -->
+              <label for="slide31" class="nav-dot3"></label>
+              <label for="slide32" class="nav-dot3"></label>
+              <label for="slide33" class="nav-dot3"></label>
+              <label for="slide34" class="nav-dot3"></label>
+              <label for="slide35" class="nav-dot3"></label>
+    
+              <!-- arrows -->
+              <label for="slide31" class="l-arrow3"> < </label>
+              <label for="slide32" class="l-arrow3"> < </label>
+              <label for="slide33" class="l-arrow3"> < </label>
+              <label for="slide34" class="l-arrow3"> < </label>
+              <label for="slide35" class="l-arrow3"> < </label>
+    
+              <label for="slide31" class="r-arrow3"> > </label>
+              <label for="slide32" class="r-arrow3"> > </label>
+              <label for="slide33" class="r-arrow3"> > </label>
+              <label for="slide34" class="r-arrow3"> > </label>
+              <label for="slide35" class="r-arrow3"> > </label>
+    
+              <div class="carousel3">
+                <ul>
+                  <li>
+                    <img
+                      src="yasen/DSC_0019.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="yasen/DSC_0025.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="yasen/DSC_0026.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="yasen/DSC_0032.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="yasen/DSC_0033.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="yasen/DSC_0033.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="yasen/DSC_0033.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="yasen/DSC_0033.JPG"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="price-label"> от 1250 p</div>
+        </div>
+        <div class="slider-block">
+          <div class="slider-top">
+            <div class="slider-heading">Ламель из ели</div>
+            <div class="slider-info-wrapper">
+              <div class="available-wrapper">
+                <div class="slider-text isavailable available">В наличии</div>
+
+                <img
+                  class="slider-arrow-down round is"
+                  src="images/checkMark.svg"
+                />
+              </div>
+
+              <div class="down-wrapper">
+                <div
+                  class="slider-text down"
+                  onclick="document.getElementById('klen').scrollIntoView({ behavior: 'smooth' });"
+                >
+                  Размеры и цены
+                </div>
+                <img
+                  class="slider-arrow-down"
+                  src="images/arrowDown.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="center4">
+            <div class="carousel-wrapper4">
+              <!-- abstract radio buttons for slides -->
+              <input id="slide41" type="radio" name="controls" checked="checked" />
+              <input id="slide42" type="radio" name="controls" />
+              
+    
+              <!-- navigation dots -->
+              <label for="slide41" class="nav-dot4"></label>
+              <label for="slide42" class="nav-dot4"></label>
+    
+              <!-- arrows -->
+              <label for="slide41" class="l-arrow4"> < </label>
+              <label for="slide42" class="l-arrow4"> < </label>
+    
+              <label for="slide41" class="r-arrow4"> > </label>
+              <label for="slide42" class="r-arrow4"> > </label>
+    
+              <div class="carousel4">
+                <ul>
+                  <li>
+                    <img
+                      src="el/DSC_0004.JPG"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="el/DSC_0316.JPG"
+                      alt=""
+                    />
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="price-label"> от 1250 p</div>
+        </div>
+        
+      </div>
+    </section>
+    
+    
+    <section id="price" class="price-section">
+      <h3 class="heading-fixed-image catalog">цены</h3>
+
+      <div id="klen" class="container column-container price">
+        <div class="tabs-and-name-wrapper">
+          <div class="wood-name">Ламель из клёна</div>
+          <div class="tabs">
+            <div class="tabs-menu">
+              <div class="tab-button active">100-160mm</div>
+              <div class="tab-button">160-200mm</div>
+              <div class="tab-button">200-250mm</div>
+            </div>
+            <div class="tab-content active">
+              <div class="line sizes">
+                <div class="size">Длина</div>
+                <div class="size">Толщина</div>
+                <div class="size">Сорт</div>
+                <div class="size">Цена</div>
+              </div>
+              <div class="line">
+                <div class="size">500-900mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">990р</div>
+              </div>
+              <div class="line">
+                <div class="size">500-900mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1250р</div>
+              </div>
+              <div class="line">
+                <div class="size">1000-1490mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1190р</div>
+              </div>
+              <div class="line">
+                <div class="size">1000-1490mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1450р</div>
+              </div>
+              <div class="line">
+                <div class="size">1500-1990mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1400р</div>
+              </div>
+              <div class="line">
+                <div class="size">1500-1990mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1590р</div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="line sizes">
+                <div class="size">Длина</div>
+                <div class="size">Толщина</div>
+                <div class="size">Сорт</div>
+                <div class="size">Цена</div>
+              </div>
+              <div class="line">
+                <div class="size">500-900mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1190р</div>
+              </div>
+              <div class="line">
+                <div class="size">500-900mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1450р</div>
+              </div>
+              <div class="line">
+                <div class="size">1000-1490mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1290р</div>
+              </div>
+              <div class="line">
+                <div class="size">1000-1490mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1550р</div>
+              </div>
+              <div class="line">
+                <div class="size">1500-1990mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1600р</div>
+              </div>
+              <div class="line">
+                <div class="size">1500-1990mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1690р</div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="line sizes">
+                <div class="size">Длина</div>
+                <div class="size">Толщина</div>
+                <div class="size">Сорт</div>
+                <div class="size">Цена</div>
+              </div>
+              <div class="line">
+                <div class="size">500-900mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1390р</div>
+              </div>
+              <div class="line">
+                <div class="size">500-900mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1650р</div>
+              </div>
+              <div class="line">
+                <div class="size">1000-1490mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1590р</div>
+              </div>
+              <div class="line">
+                <div class="size">1000-1490mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1800р</div>
+              </div>
+              <div class="line">
+                <div class="size">1500-1990mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1750р</div>
+              </div>
+              <div class="line">
+                <div class="size">1500-1990mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1990р</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-us-wrapper">
+          <div class="didnt-find">Не нашли нужные размеры?</div>
+          <button
+            onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+            class="didnt-find-button"
+          >
+            Свяжитесь с нами
+          </button>
+        </div>
+      </div>
+
+      <div id="dub" class="container column-container price">
+        <div class="tabs-and-name-wrapper">
+          <div class="wood-name">Ламель из дуба</div>
+          <div class="tabs">
+            <div class="tabs-menu">
+              <div class="tab-button active">70-90mm</div>
+              <div class="tab-button">100-150mm</div>
+              <div class="tab-button">150-190mm</div>
+              <div class="tab-button">>200mm</div>
+            </div>
+            <div class="tab-content active">
+              <div class="line sizes">
+                <div class="size">Длина</div>
+                <div class="size">Толщина</div>
+                <div class="size">Сорт</div>
+                <div class="size">Цена</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1250р</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1400р</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1500р</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1800р</div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="line sizes">
+                <div class="size">Длина</div>
+                <div class="size">Толщина</div>
+                <div class="size">Сорт</div>
+                <div class="size">Цена</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1350р</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1600р</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1600р</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1800р</div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="line sizes">
+                <div class="size">Длина</div>
+                <div class="size">Толщина</div>
+                <div class="size">Сорт</div>
+                <div class="size">Цена</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1490p</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1700p</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1790p</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1990p</div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="line sizes">
+                <div class="size">Длина</div>
+                <div class="size">Толщина</div>
+                <div class="size">Сорт</div>
+                <div class="size">Цена</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1690p</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1890p</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1990p</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">2190p</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-us-wrapper">
+          <div class="didnt-find">Не нашли нужные размеры?</div>
+          <button
+            onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+            class="didnt-find-button"
+          >
+            Свяжитесь с нами
+          </button>
+        </div>
+      </div>
+
+      <div id="yasen" class="container column-container price last">
+        <div class="tabs-and-name-wrapper">
+          <div class="wood-name">Ламель из ясеня</div>
+          <div class="tabs">
+            <div class="tabs-menu">
+              <div class="tab-button active">70-90mm</div>
+              <div class="tab-button">100-150mm</div>
+              <div class="tab-button">150-190mm</div>
+              <div class="tab-button">>200mm</div>
+            </div>
+            <div class="tab-content active">
+              <div class="line sizes">
+                <div class="size">Длина</div>
+                <div class="size">Толщина</div>
+                <div class="size">Сорт</div>
+                <div class="size">Цена</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1250р</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1400р</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1490р</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1800р</div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="line sizes">
+                <div class="size">Длина</div>
+                <div class="size">Толщина</div>
+                <div class="size">Сорт</div>
+                <div class="size">Цена</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1350р</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1550р</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1590р</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1800р</div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="line sizes">
+                <div class="size">Длина</div>
+                <div class="size">Толщина</div>
+                <div class="size">Сорт</div>
+                <div class="size">Цена</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1500p</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1700p</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1800p</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1990p</div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="line sizes">
+                <div class="size">Длина</div>
+                <div class="size">Толщина</div>
+                <div class="size">Сорт</div>
+                <div class="size">Цена</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1690p</div>
+              </div>
+              <div class="line">
+                <div class="size">500-700mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">1890p</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">3.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">2000p</div>
+              </div>
+              <div class="line">
+                <div class="size">800-1900mm</div>
+                <div class="size">4.5mm</div>
+                <div class="size">AB</div>
+                <div class="size">2190p</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-us-wrapper">
+          <div class="didnt-find">Не нашли нужные размеры?</div>
+          <button
+            onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+            class="didnt-find-button"
+          >
+            Свяжитесь с нами
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="container column-container">
+        <h2 class="heading-fixed-image make-order">оформить заказ</h2>
+        <div class="arrows-wrapper-contact">
+          <img class="arrow-contact left-arrow" src="images/arrow2.png" />
+          <img class="arrow-contact right-arrow" src="images/arrow2.png" />
+        </div>
+        <div class="contacts">
+          <div class="contact-wrapper">
+            <img class="contact-icon" src="images/whatsappIcon.svg" />
+            <a class="contact-item" href="tel:89017977306">8-901-749-57-54</a>
+          </div>
+          <div class="contact-wrapper">
+            <img class="contact-icon" src="images/mailIcon.svg" />
+            <a class="contact-item mail" href="mailto: abc@example.com"
+              >a.w.demtirov@yandex.ru</a
+            >
+          </div>
+        </div>
+        <div class="form-wrapper" id="contactForm">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSflwwQJwwad-yN-rNgkPtWn13C77lKVYTCfOZugsfUAo71WAw/viewform?embedded=true"
+            height="800"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            >Loading…</iframe
+          >
+        </div>
+        
+
+        <div></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container column-container">
+        <div class="footer-wrapper">
+          <a href="/index.html"
+            ><img
+              class="logo-footer"
+              src="images/logo.png"
+          /></a>
+          <div class="footer-items">
+            <div class="footer-item">
+              <a class="footer-item-link" href="/index.html">Главная</a>
+            </div>
+            <div class="footer-item">
+              <a class="footer-item-link" href="/catalog.html">Каталог</a>
+            </div>
+            <div class="footer-item">
+              <a class="footer-item-link" href="/about.html">О нас</a>
+            </div>
+          </div>
+          <div class="footer-contacts">
+            <div class="contact-item-footer">
+              <a class="footer-item-link contact-footer" href="tel:89017977306"
+                >89017373822</a
+              >
+            </div>
+            <div class="contact-item-footer">
+              <a
+                class="footer-item-link contact-footer"
+                href="mailto: abc@example.com"
+                >cnuieuiue@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="all-rights">
+          © 2023. OOO «Acousticwood». Все права защищены.
+        </div>
+      </div>
+    </footer>
+
+    
+  </body>
+  <script>
+    const initRegularTabs = () => {
+      // Iterate tabs array
+      let tabsElementCollection = document.getElementsByClassName("tabs");
+      [...tabsElementCollection].forEach((tabsElement) => {
+        // Build tabButton array
+        let tabButtonElementCollection =
+          tabsElement.getElementsByClassName("tab-button");
+        let tabButtonElementArray = [...tabButtonElementCollection];
+
+        // Build tab content array
+        let tabContentElementCollection =
+          tabsElement.getElementsByClassName("tab-content");
+        let tabContentElementArray = [...tabContentElementCollection];
+
+        // Attach event listener
+        tabsElement.onclick = (event) => {
+          let target = event.target;
+          if (target.classList.contains("tab-button")) {
+            for (let i = 0; i < tabButtonElementArray.length; i++) {
+              if (tabButtonElementArray[i] == target) {
+                tabButtonElementArray[i].classList.add("active");
+                tabContentElementArray[i].classList.add("active");
+              } else {
+                tabButtonElementArray[i].classList.remove("active");
+                tabContentElementArray[i].classList.remove("active");
+              }
+            }
+          }
+        };
+
+        // Make the first tab active
+        tabButtonElementArray[0].classList.add("active");
+        tabContentElementArray[0].classList.add("active");
+      });
+    };
+
+    const initDeclarativeTabs = () => {
+      // Build tab groups
+      let nodeList = document.querySelectorAll("[data-tab]");
+      let groups = [];
+      if (nodeList.length > 0) {
+        let group = [nodeList[0]];
+        let firstNode = nodeList[0];
+        for (let i = 1; i < nodeList.length; i++) {
+          if (firstNode.parentNode == nodeList[i].parentNode) {
+            group.push(nodeList[i]);
+          } else {
+            groups.push(group);
+            group = [nodeList[i]];
+            firstNode = nodeList[i];
+          }
+        }
+        groups.push(group);
+      }
+
+      // Process each group
+      groups.forEach((group) => {
+        // Add tabs class to the parent element of each group
+        let tabsElement = group[0].parentNode;
+        tabsElement.classList.add("tabs");
+
+        let tabButtonElementArray = [];
+        group.forEach((tabContent) => {
+          // Add tab-content class to each tabContent
+          tabContent.classList.add("tab-content");
+
+          // Create a new tabButton element for each tabContent
+          let tabButtonElement = document.createElement("div");
+          tabButtonElement.className = "tab-button";
+          tabButtonElement.textContent = tabContent.getAttribute("data-tab");
+
+          // Remove data-tab attribute
+          tabContent.removeAttribute("data-tab");
+
+          // Add tabButton to the array
+          tabButtonElementArray.push(tabButtonElement);
+        });
+
+        // Append the newly created tabButton elements to the parent node
+        tabsElement.prepend(...tabButtonElementArray);
+      });
+
+      // Initialize the tabs
+      initRegularTabs();
+    };
+  </script>
+  <script>
+    initRegularTabs();
+  </script>
+   <script>
+    const windowWidth = window.innerWidth;
+    const menu = document.getElementById("menu");
+    const burgerMenu = document.getElementById("burgerMenu");
+
+    function changeMenu(menu, burgerMenu, breakPoint) {
+      function setWideMenu() {
+        menu.style.display = "flex";
+        burgerMenu.style.display = "none";
+      }
+      function setBurgerMenu() {
+        menu.style.display = "none";
+        burgerMenu.style.display = "flex";
+      }
+      windowWidth > breakPoint ? setWideMenu() : setBurgerMenu();
+      
+    }
+
+    window.onresize = () => changeMenu(menu, burgerMenu, 700);
+
+    changeMenu(menu, burgerMenu, 700);
+    
+    
+
+    function switchBurgerMenu() {
+      let element = document.getElementById("burgerMenuBody");
+      let state = getComputedStyle(element).display == "flex";
+
+      state
+        ? (element.style.display = "none")
+        : (element.style.display = "flex");
+    }
+  </script>
+  <script src="main.js"></script>
+  <script src="openBurgerMenu.js"></script>
+  <script src="changeColorOnHover.js"></script>
+</html>

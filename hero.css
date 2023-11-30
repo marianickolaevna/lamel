@@ -1,0 +1,79 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #5e4a4a;
+  height: 50vw;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+.hero-h1 {
+  font-weight: 600;
+  font-size: 12vw;
+  margin-top: 0px;
+  margin-bottom: 0.5vw;
+  color: transparent;
+  transition: 0.5s;
+  background-clip: text;
+  background: url(https://uploads-ssl.webflow.com/64a8fce6fe5dca443d98cc7b/64f42f01f762b614240f12d3_joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-attachment: fixed;
+  background-position: 50%;
+}
+.hero-h2 {
+  font-size: 4vw;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 2;
+}
+.hero-button {
+  margin-top: 3vw;
+  margin-bottom: 1.5vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 1vw;
+  padding-bottom: 1.5vw;
+  background: linear-gradient(to right, #fadaa4, #7d3811);
+  font-size: 3vw;
+  border-width: 0px;
+  border-radius: 10px;
+  text-transform: none;
+  cursor: pointer;
+  color: #5e4a4a;
+}
+.hero-button:hover {
+  transform: scale(1.1, 1.1);
+}
+.hero-h3 {
+  font-size: 2vw;
+  font-weight: 200;
+}
+.hero-image {
+  position: absolute;
+}
+.image-left {
+  width: 32vw;
+  left: 0vw;
+  top: 23.8vw;
+  transform: rotateX(0) rotateY(180deg) rotateZ(0);
+}
+.image-right {
+  width: 26vw;
+  right: 0vw;
+  top: 24.9vw;
+}
+
+@media only screen and (max-width: 700px) {
+  .image-left {
+    top: 40vw;
+  }
+  .image-right {
+    top: 40vw;
+    width: 30vw;
+  }
+}
