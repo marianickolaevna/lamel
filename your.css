@@ -38,7 +38,7 @@
   text-align: left;
 }
 .your-text-1 {
-  max-width: 45vw;
+  max-width: 40vw;
   top: 3vw;
 }
 .your-text-2 {
@@ -61,25 +61,25 @@
 .your-arrow-1 {
   width: 20vw;
   transform: rotateX(0) rotateY(0) rotateZ(-1deg);
-  top: 18vw;
-  right: 30vw;
+  top: 15vw;
+  right: 32vw;
 }
 .your-arrow-2 {
   width: 20vw;
   transform: rotateX(0) rotateY(0) rotateZ(83deg);
-  top: 42vw;
+  top: 40vw;
   right: 30vw;
 }
 .your-arrow-3 {
   width: 22vw;
   transform: rotateX(0) rotateY(0) rotateZ(0deg);
-  bottom: 12vw;
+  bottom: 14vw;
   left: 48vw;
 }
 .your-arrow-4 {
-  width: 12vw;
+  width: 16vw;
   transform: rotateX(0) rotateY(0) rotateZ(126deg);
-  top: 81vw;
+  top: 77vw;
   right: 45.5vw;
 }
 .your-image-1 {
